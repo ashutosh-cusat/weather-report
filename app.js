@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static("public"));
 
 
 app.get('/', function(req,res){
@@ -25,8 +26,6 @@ app.post("/", function(req,res){
 
     https.get(url, function(response){
         //console.log(response);
-
-
         response.on("data",function(data){
             const weatherData = JSON.parse(data); 
             const temp = weatherData.main.temp;
@@ -48,6 +47,8 @@ app.post("/", function(req,res){
             res.write("<img src=" +imageurl +">");
 
             res.send();
+
+            res.redirect("/");
         })
     });
    // res.send("Server is up nd running")

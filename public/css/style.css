@@ -1,14 +1,24 @@
 html {
     background-color: #E4E9FD;
-    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
-    min-height: 1000px;
+    background-image:   #E4E9FD;
+    min-height: 100px;
     font-family: 'helvetica neue';
-  }
+}
 
-  .cityname{
-        max-width: 400px;
-        margin: 50px auto;
-        background: white;
-        border-radius: 5px;
-        box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-  }
+.container{
+      text-align: center;
+      margin-top: 100px;
+      border: 1px;
+      padding: 10px 10px;
+      text-transform: uppercase;
+      font-size: 30px;
+      
+}
+
+#cityInput{
+      font-size: 30px;
+}
+
+#submit{
+      font-size: 30px;
+}
