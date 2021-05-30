@@ -48,9 +48,13 @@ app.post("/", function(req,res){
 
             res.send();
 
-            res.redirect("/");
+            //res.redirect("/");
+            
+
+
         })
     });
+        
    // res.send("Server is up nd running")
 })
 
